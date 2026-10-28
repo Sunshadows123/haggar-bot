@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
+<title>Haggar Bot</title>
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Haggar Bot">
+<meta name="theme-color" content="#111827"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-192.png">
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px -apple-system,system-ui,sans-serif;background:#0f172a;color:#e5e7eb;height:100dvh;display:flex;flex-direction:column}
+header{padding:calc(env(safe-area-inset-top) + 10px) 14px 10px;display:flex;align-items:center;gap:10px;background:#111827;border-bottom:1px solid #1f2937}
+header h1{font-size:18px;margin:0;flex:1}button{font:inherit;border:0;border-radius:10px;padding:8px 12px;background:#2563eb;color:#fff}
+#status{font-size:12px;color:#9ca3af;padding:6px 14px}#bar{height:4px;background:#1f2937}#bar div{height:100%;width:0;background:#22c55e;transition:width .2s}
+main{flex:1;overflow-y:auto;padding:12px}.m{max-width:85%;margin:6px 0;padding:10px 12px;border-radius:16px;white-space:pre-wrap;word-wrap:break-word;line-height:1.4}
+.user{background:#2563eb;margin-left:auto;border-bottom-right-radius:4px}.assistant{background:#1f2937;border-bottom-left-radius:4px}
+form{display:flex;gap:8px;padding:10px 10px calc(env(safe-area-inset-bottom) + 10px);background:#111827}
+textarea{flex:1;resize:none;border-radius:12px;border:1px solid #374151;background:#0b1220;color:#fff;padding:10px;font:16px inherit;max-height:120px}
+</style></head><body>
+<header><h1>🤖 Haggar Bot</h1><button id="new">New chat</button></header>
+<div id="bar"><div></div></div><div id="status">Starting…</div>
+<main id="chat"></main>
+<form id="f"><textarea id="q" rows="1" placeholder="Message Haggar Bot…"></textarea><button id="send" disabled>Send</button></form>
+<script type="module" src="app.js"></script></body></html>
